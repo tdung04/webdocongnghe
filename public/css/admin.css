@@ -1,0 +1,288 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btn-logout {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-logout:hover {
+    background-color: #c82333;
+}
+
+.container {
+    max-width: 1200px; /* Tăng chiều rộng container nếu cần để có đủ không gian */
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #333333;
+    font-size: 32px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #555555;
+    font-size: 24px;
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 10px;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.products-table th, .products-table td {
+    padding: 15px;
+    border: 1px solid #dddddd;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.products-table th {
+    background-color: #f7f7f7;
+    font-weight: 500;
+}
+
+.products-table td {
+    vertical-align: top;
+}
+
+.products-table .product-image {
+    width: 80px; /* Kích thước ảnh sản phẩm */
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Điều chỉnh độ rộng của cột Giá */
+.products-table th:nth-child(5), .products-table td:nth-child(5) {
+    width: 200px; /* Tăng độ rộng cho cột Giá */
+    white-space: nowrap;
+}
+
+/* Điều chỉnh độ rộng của cột Hành động */
+.products-table th:nth-child(7), .products-table td:nth-child(7) {
+    width: 200px; /* Tăng độ rộng cho cột Hành động */
+    text-align: center; /* Căn giữa các nút hành động */
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Căn giữa các nút trong cột hành động */
+}
+
+.btn {
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-create {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #28a745;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.btn-create:hover {
+    background-color: #218838;
+}
+
+.btn-edit {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.btn-edit:hover, .btn-delete:hover {
+    opacity: 0.8;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555555;
+    font-weight: 500;
+}
+
+input[type="text"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button.btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .products-table th, .products-table td {
+        padding: 10px;
+    }
+
+    .products-table .product-image {
+        width: 60px; /* Điều chỉnh kích thước ảnh cho màn hình nhỏ */
+        height: 60px;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
+/* CSS cho bảng quản lý đơn hàng */
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.orders-table th, .orders-table td {
+    padding: 15px;
+    border: 1px solid #dddddd;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.orders-table th {
+    background-color: #f7f7f7;
+    font-weight: 500;
+    color: #333;
+    text-align: center; /* Căn giữa văn bản trong tiêu đề */
+}
+
+.orders-table td {
+    vertical-align: top;
+    text-align: center; /* Căn giữa văn bản trong cột */
+}
+
+.orders-table .customer-name {
+    text-align: left; /* Căn trái văn bản trong cột tên khách hàng */
+}
+
+.orders-table .total-price {
+    text-align: right; /* Căn phải văn bản trong cột tổng giá */
+}
+
+.orders-table .action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Điều chỉnh độ rộng của cột Hành động */
+.orders-table th:nth-child(7), .orders-table td:nth-child(7) {
+    width: 200px; /* Tăng độ rộng cho cột Hành động */
+}
+
+/* Nút hành động */
+.btn-view {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.btn-edit {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-view:hover, .btn-edit:hover, .btn-delete:hover {
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .orders-table th, .orders-table td {
+        padding: 10px;
+    }
+
+    .orders-table .action-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}

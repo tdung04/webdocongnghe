@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 15px; /* Đảm bảo khoảng trắng ở hai bên cho màn hình nhỏ */
+    box-sizing: border-box; /* Đảm bảo các phần tử nội dung được tính chính xác */
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px; /* Điều chỉnh padding để cân đối */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Đặt chiều rộng tối đa để tạo khoảng trắng hai bên */
+    text-align: center;
+    box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến kích thước */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333333;
+    font-weight: 500;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Tăng khoảng cách giữa các nhóm form */
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555555;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 15px; /* Điều chỉnh padding cho input */
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến kích thước */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #fdc5d2;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+button {
+    background-color: #fdc5d2;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Thêm khoảng cách giữa nút và form */
+}
+
+button:hover {
+    background-color: #e89fb0;
+}
+
+p {
+    margin-top: 15px; /* Giảm khoảng cách giữa văn bản và nút */
+    color: #555555;
+}
+
+a {
+    color: #fdc5d2;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e89fb0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 20px; /* Điều chỉnh padding cho màn hình nhỏ */
+        max-width: 400px;
+    }
+}
+/* CSS cho thông báo thành công */
+.alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+/* CSS cho thông báo lỗi */
+.alert-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}

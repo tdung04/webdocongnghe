@@ -12,7 +12,7 @@
 
 - Tải folder chứa code về từ trong drive
 
-- Giải nén sau đó sử dụng VSCode mở thư mục vừa giải nén (thư mục tên: ProjectCuoiKyDALN)
+- Giải nén sau đó sử dụng VSCode mở thư mục vừa giải nén 
 
 - Sau khi mở folder bằng VSCode, tìm file "database.sql"
 	+ Mở MySQL và chạy câu lệnh sau để khởi tạo 1 cơ sở dữ liệu: CREATE DATABASE webcuoiki

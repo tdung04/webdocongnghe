@@ -1,3 +1,29 @@
+# Website Bán Đồ Công Nghệ 🖥️
+
+Dự án được xây dựng với Laravel để hỗ trợ cửa hàng bán hàng công nghệ online, thân thiện với người dùng và dễ quản lý.
+
+## 🚀 Tính năng chính
+
+### 👥 Người dùng
+- Đăng ký, đăng nhập
+- Duyệt và tìm kiếm sản phẩm
+- Xem chi tiết sản phẩm
+- Thêm vào giỏ hàng, đặt hàng, thanh toán
+- Xem khuyến mãi, liên hệ
+
+### 🛠️ Quản trị viên
+- Quản lý sản phẩm (thêm/sửa/xóa)
+- Quản lý đơn hàng
+- Quản lý người dùng
+- Thống kê sản phẩm bán chạy
+
+## 🔧 Công nghệ sử dụng
+- Laravel 10.x
+- HTML/CSS
+- Blade template
+- MySQL
+- Bootstrap
+
 **Cách cài đặt**
 
 - Tải và cài đặt Visual Studio Code (VSCode)
